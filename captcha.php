@@ -23,40 +23,42 @@
               <?php
               if(isset($_POST['submit'])) 
               {
-                  $User_name = $_POST['name'];
-                  $phone = $_POST['phone'];
-                  $user_mail = $_POST['email'];
-                  $user_message = $_POST['message'];
-                  
-                  $email_from = 'info@whiteboardconsultant.com';
-                  $email_subject = "New Form Submission";
-                  $email_body = 
-                      "Name: $User_name.\n".
-                      "Phone No.: $phone.\n".
-                      "Email Id: $user_mail.\n".
-                      "User Message: $user_message.\n";
-                  
-                  $to_email = "info@whiteboardconsultant.com";
-                  $headers = "From: $email_from \r\n";
-                  $headers .= "Reply-To: $user_mail\r\n";
-                  
-                  $secretKey = "6Lfxo40oAAAAAAtA47LNgPq_Zpa2Oh8h6PSogN0N";
-                  $responseKey = $_POST['g-recaptcha-response'];
-                  $UserIP = $_SERVER['REMOTE_ADDR'];
-                  $url = 'https://www.google.com/recaptcha/api/siteverify?secret='.$secretKey.'&response='.$responseKey.'&remoteip='.$UserIP.';
+                $User_name = $_POST['name'];
+                $phone = $_POST['phone'];
+                $user_mail = $_POST['email'];
+                $user_message = $_POST['message'];
+
+                $email_from = 'info@whiteboardconsultant.com';
+                $email_subject = "New Form Submission";
+                $email_body = 
+                    "Name: $User_name.\n".
+                    "Phone No.: $phone.\n".
+                    "Email Id: $user_mail.\n".
+                    "User Message: $user_message.\n";
+                $to_email = "info@whiteboardconsultant.com";
+                $headers = "From: $email_from \r\n";
+                $headers .= "Reply-To: $user_mail\r\n";
+                
+                $secretKey = "6Lfxo40oAAAAAAtA47LNgPq_Zpa2Oh8h6PSogN0N";
+                $responseKey = $_POST['g-recaptcha-response'];
+                $UserIP = $_SERVER['REMOTE_ADDR'];
+
+                $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$UserIP";
                   
                   $response = file_get_contents($url);
                   $response = json_decode($response);
-                  
+
                   if ($response->success)
                   {
                       mail($to_email,$email_subject,$email_body,$headers);
                       echo "Message Sent Successfully";
                   }
-                  else{
-                      echo "<span>Invalid Captch, Please try again</span>";
+                  else
+                  {
+                      echo "<span>Invalid Captcha, Please try again</span>";
                   }
-              }
+                
+              }   
               ?>
           </div>
       </div>      
