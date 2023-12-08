@@ -1,3 +1,66 @@
+
+<style>
+  .navbar{
+    background: #d8e9ff;
+}
+.logo{
+    width: 200px;
+}
+.navbar-nav .nav-item .nav-link.active{
+    color: #004AAD;
+    font-weight: 500;
+}
+.navbar-nav .nav-item .nav-link{
+    color: #004AAD;
+    font-weight: 500;  
+    margin-left: 10px; 
+}
+.navbar-nav .nav-item .nav-link.active:hover{
+    color: red;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color: red;
+}
+.toggle-btn{
+    width: 40px;
+    height: 40px;
+}
+.navbar-light .navbar-toggler {
+    color: #004AAD;
+    border-color: #004AAD;
+}
+
+.dropdown-menu[data-bs-popper]{
+    margin-top: 30px;
+    background: #b9d6fb;
+}
+@media (max-width: 992px){
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    /* position: absolute; */
+    margin-top: 0;
+}
+}
+.dropdown-item{
+    color: #004AAD;
+    font-weight: 500;
+}
+.dropdown-item:hover{
+    color: red;
+}
+.contact-group{
+    margin-left: 55px;
+}
+.contact-group .fa-solid{
+    color: #004AAD;
+    padding-right: 10px;
+    margin-top: 5%;
+}
+.contact-group a{
+    font-weight: 500;
+}
+
+</style>
+
 <div id="nav-placeholder">
   <nav class="navbar sticky-top navbar-expand-lg navbar-light navbar-light shadow">
     <div class="container-fluid">
@@ -22,7 +85,7 @@
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Student
               Zone</a>
             <ul class="dropdown-menu shadow">
-              <li><a class="dropdown-item" href="career_counselling.html">Career Counselling</a></li>
+              <li><a class="dropdown-item" href="study-abroad-consulting.html">Study Abroad</a></li>
               <!-- <li><a class="dropdown-item" href="#">Interview Preparation</a></li> -->
               <!--BVC-->
               <li class="dropend">
@@ -57,10 +120,10 @@
                   <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Manipal University,
                     Jaipur</a>
                   <ul class="dropdown-menu dropdown-submenu shadow">
-                    <li><a class="dropdown-item" href="college_admission.html#bachelors_manipal_univ" target="_blank">
+                    <li><a class="dropdown-item" href="manipal-bcom-online-admission.html" target="_blank">
                         B.Com</a></li>
-                    <li><a class="dropdown-item" href=""> BBA</a></li>
-                    <li><a class="dropdown-item" href=""> BCA</a></li>
+                    <li><a class="dropdown-item" href="manipal-bba-online-admission.html"> BBA</a></li>
+                    <li><a class="dropdown-item" href="manipal-bca-online-admission.html"> BCA</a></li>
                   </ul>
               </li>
               <!--Sikkim Manipal-->
@@ -70,10 +133,8 @@
               </li>
               <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Sikkim Manipal University</a>
               <ul class="dropdown-menu dropdown-submenu shadow">
-                <li><a class="dropdown-item" href=""> B.Com</a></li>
-                <li><a class="dropdown-item" href=""> BA - English</a></li>
-                <li><a class="dropdown-item" href=""> BA - Political Science</a></li>
-                <li><a class="dropdown-item" href=""> BA - Sociology</a></li>
+                <li><a class="dropdown-item" href="sikkim-manipal-bcom-online-admission.html"> B.Com</a></li>
+                <li><a class="dropdown-item" href="sikkim-manipal-ba-online-admission.html"> BA - Programs</a></li>
               </ul>
           </li>
         </ul>
@@ -98,10 +159,10 @@
             </li>
             <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Manipal University, Jaipur</a>
             <ul class="dropdown-menu dropdown-submenu shadow">
-              <li><a class="dropdown-item" href=""> MBA</a></li>
-              <li><a class="dropdown-item" href=""> MCA</a></li>
-              <li><a class="dropdown-item" href=""> M.Com</a></li>
-              <li><a class="dropdown-item" href=""> MA in Journalisim & Mass Comm</a></li>
+              <li><a class="dropdown-item" href="manipal-mba-online-course-admission.html"> MBA</a></li>
+              <li><a class="dropdown-item" href="manipal-mca-online-courses-admission.html"> MCA</a></li>
+              <li><a class="dropdown-item" href="manipal-mcom-online-courses-admission.html"> M.Com</a></li>
+              <li><a class="dropdown-item" href="manipal-master-journalism-mass-communication-online-courses-admission.html"> MA in Journalisim & Mass Comm</a></li>
             </ul>
         </li>
         <li class="dropend">
@@ -110,11 +171,11 @@
         </li>
         <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Sikkim Manipal University</a>
         <ul class="dropdown-menu dropdown-submenu shadow">
-          <li><a class="dropdown-item" href=""> M.Com</a></li>
-          <li><a class="dropdown-item" href=""> MCA</a></li>
-          <li><a class="dropdown-item" href=""> MA - English</a></li>
-          <li><a class="dropdown-item" href=""> MA - Political Science</a></li>
-          <li><a class="dropdown-item" href=""> MA - Sociology</a></li>
+          <li><a class="dropdown-item" href="sikkim-manipal-mcom-online-admission.html"> M.Com</a></li>
+          <li><a class="dropdown-item" href="sikkim-manipal-mca-online-admission.html"> MCA</a></li>
+          <li><a class="dropdown-item" href="sikkim-manipal-ma-english-online-admission.html"> MA - English</a></li>
+          <li><a class="dropdown-item" href="sikkim-manipal-ma-pol-science-online-admission.html"> MA - Political Science</a></li>
+          <li><a class="dropdown-item" href="sikkim-manipal-ma-sociology-online-admission.html"> MA - Sociology</a></li>
         </ul>
         </li>
         </ul>
@@ -170,3 +231,4 @@
     }
   }) 
 </script>
+
