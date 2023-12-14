@@ -16,10 +16,12 @@
     margin-left: 10px; 
 }
 .navbar-nav .nav-item .nav-link.active:hover{
-    color: red;
+    border-bottom: 2px solid #004AAD;
+    /* color: red; */
 }
 .navbar-nav .nav-item .nav-link:hover{
-    color: red;
+    /* color: red; */
+    border-bottom: 2px solid #004AAD;
 }
 .toggle-btn{
     width: 40px;
@@ -45,7 +47,7 @@
     font-weight: 500;
 }
 .dropdown-item:hover{
-    color: red;
+    color: #004AAD;
 }
 .contact-group{
     margin-left: 55px;
@@ -64,7 +66,7 @@
 <div id="nav-placeholder">
   <nav class="navbar sticky-top navbar-expand-lg navbar-light navbar-light shadow">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img class="logo" src="images/Logo Transparent Small.png" alt=""></a>
+      <a class="navbar-brand" href="index.html"><img class="logo" src="images/wbc-logo.png" alt="Whiteboard Consultants | Education and Business Consultant"></a>
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
         <img class="toggle-btn" src="images/burger.png" alt="">
         <div class="hamburger-toggle">
@@ -89,12 +91,12 @@
               <!-- <li><a class="dropdown-item" href="#">Interview Preparation</a></li> -->
               <!--BVC-->
               <li class="dropend">
-                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Job Assured Trainng
+                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Job Assured Training
                   Programs</a>
                 <ul class="dropdown-menu shadow">
-                  <li><a class="dropdown-item" href="job-assured-full-stack-web-developer-program.html"> Full Stack Development</a></li>
-                  <li><a class="dropdown-item" href="job-assured-cloud-computing-course.html"> Cloud Computing</a></li>
-                  <li><a class="dropdown-item" href="job-assured-ai-machine-learning-program.html"> AI & Machine Learning</a></li>
+                  <li><a class="dropdown-item" href="job-assured-full-stack-web-developer-course.html">Full Stack Development</a></li>
+                  <li><a class="dropdown-item" href="job-assured-cloud-computing-course.html">Infrastructure & Cloud Achitecture</a></li>
+                  <li><a class="dropdown-item" href="job-assured-ai-machine-learning-course.html">AI & Machine Learning</a></li>
                 </ul>
               </li>
               <!--Bachelors-->
@@ -106,10 +108,10 @@
                   <li class="dropend">
                     <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">IISM</a>
                     <ul class="dropdown-menu dropdown-submenu shadow">
-                      <li><a class="dropdown-item" href="college_admission.html#iism" target="_blank"> Bachelor's in
+                      <li><a class="dropdown-item" href="iism-bachelor-sports-management.html"> Bachelor's in
                           Sports Management</a></li>
-                      <li><a class="dropdown-item" href=""> Bachelor's in Sports Science</a></li>
-                      <li><a class="dropdown-item" href=""> ISMAT & ISSAT Training</a></li>
+                      <li><a class="dropdown-item" href="iism-bachelor-sports-science.html"> Bachelor's in Sports Science</a></li>
+                      <!-- <li><a class="dropdown-item" href=""> ISMAT & ISSAT Training</a></li> -->
                     </ul>
                   </li>
                   <!--Manipal, Jaipur-->
@@ -120,8 +122,7 @@
                   <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Manipal University,
                     Jaipur</a>
                   <ul class="dropdown-menu dropdown-submenu shadow">
-                    <li><a class="dropdown-item" href="manipal-bcom-online-admission.html" target="_blank">
-                        B.Com</a></li>
+                    <li><a class="dropdown-item" href="manipal-bcom-online-admission.html">B.Com</a></li>
                     <li><a class="dropdown-item" href="manipal-bba-online-admission.html"> BBA</a></li>
                     <li><a class="dropdown-item" href="manipal-bca-online-admission.html"> BCA</a></li>
                   </ul>
@@ -148,8 +149,8 @@
             <li class="dropend">
               <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">IISM</a>
               <ul class="dropdown-menu dropdown-submenu shadow">
-                <li><a class="dropdown-item" href=""> Master's in Sports Management</a></li>
-                <li><a class="dropdown-item" href=""> Master's in Sports Science</a></li>
+                <li><a class="dropdown-item" href="iism-master-sports-management.html"> Master's in Sports Management</a></li>
+                <li><a class="dropdown-item" href="iism-master-sports-science.html"> Master's in Sports Science</a></li>
               </ul>
             </li>
             <!--Manipal, Jaipur-->
@@ -162,7 +163,7 @@
               <li><a class="dropdown-item" href="manipal-mba-online-course-admission.html"> MBA</a></li>
               <li><a class="dropdown-item" href="manipal-mca-online-courses-admission.html"> MCA</a></li>
               <li><a class="dropdown-item" href="manipal-mcom-online-courses-admission.html"> M.Com</a></li>
-              <li><a class="dropdown-item" href="manipal-master-journalism-mass-communication-online-courses-admission.html"> MA in Journalisim & Mass Comm</a></li>
+              <li><a class="dropdown-item" href="manipal-master-journalism-mass-communication-online-courses-admission.html"> MA in Journalism & Mass Comm</a></li>
             </ul>
         </li>
         <li class="dropend">
@@ -187,32 +188,32 @@
         <!--Corporate Service Menu-->
 
 
-        <li class="nav-item dropdown">
+        <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Corporate
             Sevices</a>
           <ul class="dropdown-menu shadow">
             <li><a class="dropdown-item" href="#">Electrical Safety Audits</a></li>
             <li class="dropend">
-              <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Trainng Programs</a>
+              <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Training Programs</a>
               <ul class="dropdown-menu shadow">
                 <li><a class="dropdown-item" href=""> Sales Training</a></li>
                 <li><a class="dropdown-item" href=""> Soft Skill Training</a></li>
               </ul>
             </li>
           </ul>
-        </li>
+        </li> -->
         <!--About Us Menu-->
         <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
+          <a class="nav-link" href="about-us-preferred-education-admission-business-consultant.html">About Us</a>
         </li>
         <!--Contact Us Menu-->
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
+          <a class="nav-link" href="whiteboard-consultant-leading-admission-consultant-contact-us.html">Contact Us</a>
         </li>
         <!--Articles Menu-->
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="#">Articles</a>
-        </li>
+        </li> -->
         </ul>
         <div class="contact-group d-flex ms-auto">
           <i class="fa-solid fa-phone"></i> <span><a href="tel:+918583035656">+91 85830 35656</a>
