@@ -4,63 +4,7 @@ body{
     font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
     background: #f0f0f0
 }
-/* .navbar{
-    background: #d8e9ff;
-}
-.logo{
-    width: 200px;
-}
-.navbar-nav .nav-item .nav-link.active{
-    color: #004AAD;
-    font-weight: 500;
-}
-.navbar-nav .nav-item .nav-link{
-    color: #004AAD;
-    font-weight: 500;  
-    margin-left: 10px; 
-}
-.navbar-nav .nav-item .nav-link.active:hover{
-    color: red;
-}
-.navbar-nav .nav-item .nav-link:hover{
-    color: red;
-}
-.toggle-btn{
-    width: 40px;
-    height: 40px;
-}
-.navbar-light .navbar-toggler {
-    color: #004AAD;
-    border-color: #004AAD;
-}
 
-.dropdown-menu[data-bs-popper]{
-    margin-top: 30px;
-    background: #b9d6fb;
-}
-@media (max-width: 992px){
-.navbar-expand-lg .navbar-nav .dropdown-menu {
-    margin-top: 0;
-}
-}
-.dropdown-item{
-    color: #004AAD;
-    font-weight: 500;
-}
-.dropdown-item:hover{
-    color: red;
-}
-.contact-group{
-    margin-left: 55px;
-}
-.contact-group .fa-solid{
-    color: #004AAD;
-    padding-right: 10px;
-    margin-top: 5%;
-}
-.contact-group a{
-    font-weight: 500;
-} */
 
 /*--TOP CAROUSEL SECTION--*/
 .carousel{
@@ -72,13 +16,12 @@ body{
     background: none;
 }
 .carousel-item{
-    padding-top: 80px;
     padding-bottom: 0;
 }
 .carousel_img1{
     text-align: center;
 }
-.carousel-inner h3{
+.carousel-inner h1, .carousel-inner h3{
     text-align: left;
     font-size: 40px;
     font-weight: 700;
@@ -93,13 +36,15 @@ body{
 
 }
 .carousel_text{
-    padding-top: 10%;
     text-align: left;
     padding-left: 20px;
 }
 .carousel-btn .btn{
     margin-top: 20px;
-    margin-left: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     border-radius: 5px;
     background: none;
     border-color: #004AAD;
@@ -131,9 +76,17 @@ body{
     font-size: 40px;
     font-weight: 900;
 }
+.about-sec p{
+    text-align: justify;
+    margin-top: 20px;
+}
 
 .aboutus-btn .btn{
-    margin-top: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     border-radius: 5px;
     background: none;
     border-color: #004AAD;
@@ -145,10 +98,11 @@ body{
     border:none;
     color: #ffffff;
 }
-.abtimg img{
+.abt-us-img img{
+    display: flex;
     width: 100%;
-    margin-left: 10px;
-    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 /*--END OF SECTION 2 WBC GRID--*/
@@ -321,6 +275,10 @@ body{
 /*--------END OF OUR SERVICES PAGE---------*/
 
 /*------WHY US------*/
+.why-us{
+    background: #ffffff;
+    padding: 20px;
+}
 .why-us-title h3{
     color: #004AAD;
     font-size: 42px;
@@ -695,10 +653,6 @@ body{
 #iism{
     margin-top: 40px;
 }
-
-
-
-
 /*--Common Header--*/
 .common_banner .center{
     margin: auto;
@@ -732,9 +686,7 @@ body{
     padding-left: 20px;
     text-align: justify;
 }
-/* .maipal-top{
-    padding: 10px;
-} */
+
 .table-sec{
     padding: 20px;
     background: #ffffff;
@@ -1382,7 +1334,6 @@ body{
 
 .smu-english{
     background:#b9d7ff;
-    /* margin: 0 10px 0 10px */
 }
 
 .ba-content .nav-tabs .nav-link:hover{
@@ -1457,120 +1408,7 @@ body{
     border:none;
     color: #ffffff;
 }
-/* .footnote{
-    padding-top: 40px;
-} */
-/*-----*/
-    /* .smu-ma-english-img{
-        padding-top: 20px;
-        background: #d3e6ff;
-    }
-    .smu-ma-english-img img{
-        width: 100%;
-        border-radius: 10px;
-    }
-    #smu-ma-english h2, #smu-ma-english h3, #smu-ma-english h4, #smu-ma-english h5{
-        color: #004AAD;
-    }
-    .smu-ma-english-text h4{
-        padding-top: 10px;
-    }
-    .smu-ma-english-text .tab-btn{
-        margin-top: 10px;
-        padding: 10px;
-        border-radius: 5px;
-        background: none;
-        width: 100%;
-        border-color: #004AAD;
-        color: #004AAD;
-    }
-    .smu-ma-english-text .tab-btn:hover{
-        background: #004AAD;
-        border:none;
-        color: #ffffff;
-    }
-    #smu-ma-english .nav-tabs .nav-link:hover{
-        color: #ffffff;
-        background: #004AAD;
-    }
-    #smu-ma-english .other-description{
-        margin-top: 0;
-        margin-bottom: 0;
-    } */
-/*--SMU MA Pol Science--*/
-/* .smu-ma-pol-img{
-    padding-top: 20px;
-    background: #d3e6ff;
-}
-.smu-ma-pol-img img{
-    width: 100%;
-    border-radius: 10px;
-}
-#smu-ma-pol h2, #smu-ma-pol h3, #smu-ma-pol h4, #smu-ma-pol h5{
-    color: #004AAD;
-}
-.smu-ma-pol-text h4{
-    padding-top: 10px;
-}
-.smu-ma-pol-text .tab-btn{
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    background: none;
-    width: 100%;
-    border-color: #004AAD;
-    color: #004AAD;
-}
-.smu-ma-pol-text .tab-btn:hover{
-    background: #004AAD;
-    border:none;
-    color: #ffffff;
-}
-#smu-ma-pol .nav-tabs .nav-link:hover{
-    color: #ffffff;
-    background: #004AAD;
-}
-#smu-ma-pol .other-description{
-    margin-top: 0;
-    margin-bottom: 0;
-} */
-/*--SMU MA Sociology--*/
-/* .smu-ma-sociology-img{
-    padding-top: 20px;
-    background: #d3e6ff;
-}
-.smu-ma-sociology-img img{
-    width: 100%;
-    border-radius: 10px;
-}
-#smu-ma-sociology h2, #smu-ma-sociology h3, #smu-ma-sociology h4, #smu-ma-sociology h5{
-    color: #004AAD;
-}
-.smu-ma-sociology-text h4{
-    padding-top: 10px;
-}
-.smu-ma-sociology-text .tab-btn{
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    background: none;
-    width: 100%;
-    border-color: #004AAD;
-    color: #004AAD;
-}
-.smu-ma-sociology-text .tab-btn:hover{
-    background: #004AAD;
-    border:none;
-    color: #ffffff;
-}
-#smu-ma-sociology .nav-tabs .nav-link:hover{
-    color: #ffffff;
-    background: #004AAD;
-}
-#smu-ma-sociology .other-description{
-    margin-top: 0;
-    margin-bottom: 0;
-} */
+
 /*--SMU MCA--*/
 #smu-mca .nav-tabs .nav-link:hover{
     color: #ffffff;
@@ -1582,7 +1420,6 @@ body{
 }
 .mca-smu-img{
     padding-top: 20px;
-    /* background: #d3e6ff; */
 }
 .mca-smu-img img{
     width: 100%;
@@ -1728,11 +1565,8 @@ body{
     border-radius: 10px;
     margin: 20px;
 }
-.study-destinations .country-flags img{
-    padding: 20px 20px;
-    width: 25%;
-}
-.study-destinations .country-flags span{
+
+.study-destinations .country-flags .country-txt{
     color: #004AAD;
     font-size: 28px;
     text-align: center;
@@ -1742,13 +1576,6 @@ body{
 .test-prep{
     background: #d3e6ff;
     padding: 20px 10px;
-}
-.test-prep h2{
-    font-weight: 700;
-    text-decoration: underline;
-    color: #004aad;
-    text-align: center;
-    padding-bottom: 20px;
 }
 .test-prep h3{
     font-weight: 600;
